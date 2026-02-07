@@ -1,16 +1,11 @@
-# Compiled class file
+# ============================================================================
+# BUILD & COMPILATION
+# ============================================================================
+
+# Compiled class files
 *.class
 
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+# Package Files
 *.jar
 *.war
 *.nar
@@ -19,6 +14,302 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Maven
+target/
+.m2/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+pom.xml.bak
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+mvnw.cmd
+
+# Gradle (if used)
+build/
+gradle/
+.gradle/
+*.gradle
+gradlew
+gradlew.bat
+
+# ============================================================================
+# IDE & EDITOR
+# ============================================================================
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+*.jar.original
+
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+
+# Eclipse
+.classpath
+.project
+.settings/
+.factorypath
+bin/
+
+# NetBeans
+nbproject/
+.nb-gradle/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle-properties
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.vim_history
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+*.app
+.env.local
+
+# ============================================================================
+# LOGGING & RUNTIME
+# ============================================================================
+
+# Log files
+*.log
+*.log.*
+logs/
+log/
+
+# Java crash logs
 hs_err_pid*
 replay_pid*
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Spring Boot specific
+*.jks
+*.p12
+*.keystore
+
+# ============================================================================
+# ENVIRONMENT & CONFIGURATION
+# ============================================================================
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.dev
+.env.prod
+
+# Configuration files (sensitive)
+application-prod.yml
+application-prod.properties
+application-local.yml
+application-local.properties
+
+# ============================================================================
+# DATABASE
+# ============================================================================
+
+# PostgreSQL data
+pgdata/
+postgres-data/
+*.sql.bak
+
+# H2 database
+*.h2.db
+
+# SQLite
+*.sqlite
+*.db
+
+# ============================================================================
+# DOCKER & CONTAINERS
+# ============================================================================
+
+# Docker volumes
+docker-volumes/
+.dockerignore.local
+
+# Docker compose local overrides
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Container runtime files
+.containerd/
+
+# ============================================================================
+# THIRD-PARTY & DEPENDENCIES
+# ============================================================================
+
+# npm/Node (if used for frontend)
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+.npm/
+package-lock.json
+yarn.lock
+
+# Python (if used)
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+
+# ============================================================================
+# BUILD OUTPUT & ARTIFACTS
+# ============================================================================
+
+# Build outputs
+build/
+dist/
+*.war
+*.ear
+
+# Application packages/bundles
+*.apk
+*.aab
+*.ipa
+*.dmg
+*.exe
+*.msi
+
+# ============================================================================
+# TEST ARTIFACTS
+# ============================================================================
+
+# Test reports
+test-results/
+coverage/
+.coverage
+*.xml
+!pom.xml
+
+# JUnit
+junit-results/
+surefire-reports/
+
+# JaCoCo
+jacoco.exec
+*.jacoco.exec
+.jacoco.databases
+
+# ============================================================================
+# PROJECT SPECIFIC
+# ============================================================================
+
+# Uploaded files
+uploads/
+temp/
+tmp/
+
+# Generated files
+generated/
+.generated/
+
+# Reports
+reports/
+*.pdf
+*.xlsx
+
+# IDE specific extension files
+.claude/
+.claude/**
+!.claude/**/*.md
+
+# Documentation build outputs
+docs/build/
+site/
+
+# ============================================================================
+# OS & SYSTEM FILES
+# ============================================================================
+
+# Windows
+Thumbs.db
+Desktop.ini
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+
+# macOS
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+
+# ============================================================================
+# MISCELLANEOUS
+# ============================================================================
+
+# Backup files
+*.bak
+*.backup
+*.orig
+*.swp
+*~
+
+# Temporary files
+*.tmp
+*.temp
+
+# Archive files (excluding those in version control)
+*.7z
+*.zip
+*.gz
+!*.gz.sha256
+
+# Certificates & Keys (IMPORTANT: Never commit these!)
+*.pem
+*.key
+*.crt
+*.cert
+*.p8
+*.pkcs8
+*.jks.bak
+
+# Private keys
+**/private_key*
+**/secret*
+!**/secret.example
+
+# ============================================================================
+# IGNORE THIS
+# ============================================================================
+
+# Ignore everything in target except specific files
+/target/*
+!/target/classes/
+
+# Keep documentation
+!docs/**/*.md
+!docs/**/*.sql
+!/docs/
