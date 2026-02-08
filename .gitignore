@@ -313,3 +313,8 @@ Desktop.ini
 !docs/**/*.md
 !docs/**/*.sql
 !/docs/
+
+# .gitignore
+.env
+*.env
+!.env.example
